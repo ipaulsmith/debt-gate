@@ -1,0 +1,48 @@
+{
+  "name": "debt-gate",
+  "version": "0.1.0",
+  "description": "Keep existing debt. Block new debt. Prove fixes are real.",
+  "type": "module",
+  "bin": {
+    "debt-gate": "bin/debt-gate.mjs"
+  },
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "files": [
+    "assets/readme/",
+    "bin/",
+    "src/",
+    "examples/",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "pack:check": "npm pack --dry-run"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "baseline",
+    "quality-gate",
+    "technical-debt",
+    "migration",
+    "git"
+  ],
+  "license": "MIT",
+  "author": "Pavel Rabtsevich",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipaulsmith/debt-gate.git"
+  },
+  "homepage": "https://github.com/ipaulsmith/debt-gate#readme",
+  "bugs": {
+    "url": "https://github.com/ipaulsmith/debt-gate/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,322 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-22T03:35:22.545Z",
+  "checkerVersion": "0.1.0",
+  "repositories": [
+    {
+      "name": "node-inspector/node-inspector",
+      "type": "debugger",
+      "language": "JavaScript",
+      "url": "https://github.com/node-inspector/node-inspector",
+      "sha": "79e01c049286374f86dd560742a614019c02402f",
+      "target": "lib/config.js",
+      "rule": {
+        "id": "util-is-array",
+        "old": "util.isArray(",
+        "replacement": "Array.isArray(",
+        "message": "Uses deprecated util.isArray"
+      },
+      "baselineCount": 1,
+      "scenarios": {
+        "existingDebt": {
+          "countOnly": "allow",
+          "debtGate": {
+            "exitCode": 0,
+            "durationMs": 303,
+            "needsAccept": false,
+            "newFindings": 0,
+            "unprovenDisappearances": 0,
+            "provenTightenings": 0,
+            "reopened": 0
+          },
+          "currentCount": 1
+        },
+        "newDebt": {
+          "countOnly": "block",
+          "debtGate": {
+            "exitCode": 1,
+            "durationMs": 306,
+            "needsAccept": false,
+            "newFindings": 1,
+            "unprovenDisappearances": 0,
+            "provenTightenings": 0,
+            "reopened": 0
+          },
+          "currentCount": 2
+        },
+        "deletedWithoutRepair": {
+          "countOnly": "allow",
+          "debtGate": {
+            "exitCode": 1,
+            "durationMs": 337,
+            "needsAccept": false,
+            "newFindings": 0,
+            "unprovenDisappearances": 1,
+            "provenTightenings": 0,
+            "reopened": 0
+          },
+          "currentCount": 0
+        },
+        "sameCountSwap": {
+          "countOnly": "allow",
+          "debtGate": {
+            "exitCode": 1,
+            "durationMs": 340,
+            "needsAccept": false,
+            "newFindings": 1,
+            "unprovenDisappearances": 0,
+            "provenTightenings": 1,
+            "reopened": 0
+          },
+          "currentCount": 1
+        },
+        "provedRepair": {
+          "countOnly": "allow",
+          "beforeAccept": {
+            "exitCode": 1,
+            "durationMs": 353,
+            "needsAccept": true,
+            "newFindings": 0,
+            "unprovenDisappearances": 0,
+            "provenTightenings": 1,
+            "reopened": 0
+          },
+          "acceptExitCode": 0,
+          "afterAccept": {
+            "exitCode": 0,
+            "durationMs": 360,
+            "needsAccept": false,
+            "newFindings": 0,
+            "unprovenDisappearances": 0,
+            "provenTightenings": 0,
+            "reopened": 0
+          },
+          "currentCount": 0
+        },
+        "reintroducedDebt": {
+          "countOnly": "block",
+          "debtGate": {
+            "exitCode": 1,
+            "durationMs": 349,
+            "needsAccept": false,
+            "newFindings": 1,
+            "unprovenDisappearances": 0,
+            "provenTightenings": 0,
+            "reopened": 0
+          },
+          "currentCount": 1
+        }
+      }
+    },
+    {
+      "name": "codeclysm/extract",
+      "type": "archive library",
+      "language": "Go",
+      "url": "https://github.com/codeclysm/extract",
+      "sha": "9d5343d9116fe95ef462fd00e5837786e4c9d8d5",
+      "target": "extractor.go",
+      "rule": {
+        "id": "ioutil-read-all",
+        "old": "ioutil.ReadAll(",
+        "replacement": "io.ReadAll(",
+        "message": "Uses deprecated ioutil.ReadAll"
+      },
+      "baselineCount": 1,
+      "scenarios": {
+        "existingDebt": {
+          "countOnly": "allow",
+          "debtGate": {
+            "exitCode": 0,
+            "durationMs": 286,
+            "needsAccept": false,
+            "newFindings": 0,
+            "unprovenDisappearances": 0,
+            "provenTightenings": 0,
+            "reopened": 0
+          },
+          "currentCount": 1
+        },
+        "newDebt": {
+          "countOnly": "block",
+          "debtGate": {
+            "exitCode": 1,
+            "durationMs": 289,
+            "needsAccept": false,
+            "newFindings": 1,
+            "unprovenDisappearances": 0,
+            "provenTightenings": 0,
+            "reopened": 0
+          },
+          "currentCount": 2
+        },
+        "deletedWithoutRepair": {
+          "countOnly": "allow",
+          "debtGate": {
+            "exitCode": 1,
+            "durationMs": 318,
+            "needsAccept": false,
+            "newFindings": 0,
+            "unprovenDisappearances": 1,
+            "provenTightenings": 0,
+            "reopened": 0
+          },
+          "currentCount": 0
+        },
+        "sameCountSwap": {
+          "countOnly": "allow",
+          "debtGate": {
+            "exitCode": 1,
+            "durationMs": 327,
+            "needsAccept": false,
+            "newFindings": 1,
+            "unprovenDisappearances": 0,
+            "provenTightenings": 1,
+            "reopened": 0
+          },
+          "currentCount": 1
+        },
+        "provedRepair": {
+          "countOnly": "allow",
+          "beforeAccept": {
+            "exitCode": 1,
+            "durationMs": 329,
+            "needsAccept": true,
+            "newFindings": 0,
+            "unprovenDisappearances": 0,
+            "provenTightenings": 1,
+            "reopened": 0
+          },
+          "acceptExitCode": 0,
+          "afterAccept": {
+            "exitCode": 0,
+            "durationMs": 330,
+            "needsAccept": false,
+            "newFindings": 0,
+            "unprovenDisappearances": 0,
+            "provenTightenings": 0,
+            "reopened": 0
+          },
+          "currentCount": 0
+        },
+        "reintroducedDebt": {
+          "countOnly": "block",
+          "debtGate": {
+            "exitCode": 1,
+            "durationMs": 330,
+            "needsAccept": false,
+            "newFindings": 1,
+            "unprovenDisappearances": 0,
+            "provenTightenings": 0,
+            "reopened": 0
+          },
+          "currentCount": 1
+        }
+      }
+    },
+    {
+      "name": "ddollar/foreman",
+      "type": "process manager",
+      "language": "Ruby",
+      "url": "https://github.com/ddollar/foreman",
+      "sha": "5b815c5d8077511664a712aca90b070229ca6413",
+      "target": "lib/foreman/export/base.rb",
+      "rule": {
+        "id": "file-exists",
+        "old": "File.exists?(",
+        "replacement": "File.exist?(",
+        "message": "Uses deprecated File.exists?"
+      },
+      "baselineCount": 4,
+      "scenarios": {
+        "existingDebt": {
+          "countOnly": "allow",
+          "debtGate": {
+            "exitCode": 0,
+            "durationMs": 292,
+            "needsAccept": false,
+            "newFindings": 0,
+            "unprovenDisappearances": 0,
+            "provenTightenings": 0,
+            "reopened": 0
+          },
+          "currentCount": 4
+        },
+        "newDebt": {
+          "countOnly": "block",
+          "debtGate": {
+            "exitCode": 1,
+            "durationMs": 300,
+            "needsAccept": false,
+            "newFindings": 1,
+            "unprovenDisappearances": 0,
+            "provenTightenings": 0,
+            "reopened": 0
+          },
+          "currentCount": 5
+        },
+        "deletedWithoutRepair": {
+          "countOnly": "allow",
+          "debtGate": {
+            "exitCode": 1,
+            "durationMs": 334,
+            "needsAccept": false,
+            "newFindings": 0,
+            "unprovenDisappearances": 1,
+            "provenTightenings": 0,
+            "reopened": 0
+          },
+          "currentCount": 3
+        },
+        "sameCountSwap": {
+          "countOnly": "allow",
+          "debtGate": {
+            "exitCode": 1,
+            "durationMs": 325,
+            "needsAccept": false,
+            "newFindings": 1,
+            "unprovenDisappearances": 0,
+            "provenTightenings": 1,
+            "reopened": 0
+          },
+          "currentCount": 4
+        },
+        "provedRepair": {
+          "countOnly": "allow",
+          "beforeAccept": {
+            "exitCode": 1,
+            "durationMs": 321,
+            "needsAccept": true,
+            "newFindings": 0,
+            "unprovenDisappearances": 0,
+            "provenTightenings": 1,
+            "reopened": 0
+          },
+          "acceptExitCode": 0,
+          "afterAccept": {
+            "exitCode": 0,
+            "durationMs": 331,
+            "needsAccept": false,
+            "newFindings": 0,
+            "unprovenDisappearances": 0,
+            "provenTightenings": 0,
+            "reopened": 0
+          },
+          "currentCount": 3
+        },
+        "reintroducedDebt": {
+          "countOnly": "block",
+          "debtGate": {
+            "exitCode": 1,
+            "durationMs": 334,
+            "needsAccept": false,
+            "newFindings": 1,
+            "unprovenDisappearances": 0,
+            "provenTightenings": 0,
+            "reopened": 0
+          },
+          "currentCount": 4
+        }
+      }
+    }
+  ]
+}

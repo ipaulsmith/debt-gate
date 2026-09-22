@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" role="img" aria-labelledby="title desc">
+  <title id="title">Your scanner and repair check feed one deterministic gate</title>
+  <desc id="desc">The scanner reports stable finding IDs. The separate repair command reports proof. Debt-gate compares both with the committed baseline and returns a pass or block verdict to CI.</desc>
+  <defs>
+    <style>
+      .sans{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI","Helvetica Neue",Helvetica,Arial,sans-serif}
+      .mono{font-family:"SF Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono","Liberation Mono",monospace}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1L9 5L1 9" fill="none" stroke="#2E6BE6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <filter id="shadow" x="-10%" y="-15%" width="120%" height="145%"><feDropShadow dx="0" dy="16" stdDeviation="22" flood-color="#000" flood-opacity="0.08"/></filter>
+  </defs>
+  <rect width="1200" height="440" fill="#F1F1EF"/>
+  <text class="sans" x="52" y="204" font-size="70" font-weight="800" letter-spacing="-3" fill="#2E6BE6">two checks</text>
+  <text class="sans" x="62" y="276" font-size="50" font-weight="800" letter-spacing="-2" fill="#111214">one verdict</text>
+  <g filter="url(#shadow)">
+    <rect x="430" y="54" width="226" height="118" rx="16" fill="#FFFFFF"/>
+    <rect x="430" y="268" width="226" height="118" rx="16" fill="#FFFFFF"/>
+    <rect x="766" y="126" width="238" height="188" rx="18" fill="#2E6BE6"/>
+  </g>
+  <text class="sans" x="458" y="96" font-size="18" font-weight="700" letter-spacing="1.2" fill="#62666C">SCAN</text>
+  <text class="sans" x="458" y="132" font-size="29" font-weight="750" fill="#111214">your scanner</text>
+  <text class="mono" x="458" y="157" font-size="18" font-weight="600" fill="#2E6BE6">stable finding IDs</text>
+  <text class="sans" x="458" y="310" font-size="18" font-weight="700" letter-spacing="1.2" fill="#62666C">PROVE</text>
+  <text class="sans" x="458" y="346" font-size="29" font-weight="750" fill="#111214">repair check</text>
+  <text class="mono" x="458" y="371" font-size="18" font-weight="600" fill="#2E6BE6">evidence for removals</text>
+  <path d="M656 113H714Q736 113 736 135V185H766" fill="none" stroke="#2E6BE6" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M656 327H714Q736 327 736 305V255H766" fill="none" stroke="#2E6BE6" stroke-width="4" marker-end="url(#arrow)"/>
+  <text class="sans" x="885" y="195" text-anchor="middle" font-size="38" font-weight="800" letter-spacing="-1.5" fill="#FFFFFF">debt-gate</text>
+  <text class="mono" x="885" y="232" text-anchor="middle" font-size="18" font-weight="650" fill="#DCE7FF">compare with baseline</text>
+  <rect x="802" y="257" width="166" height="34" rx="8" fill="#FFFFFF" fill-opacity="0.16"/>
+  <text class="mono" x="885" y="280" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">deterministic</text>
+  <path d="M1004 220H1060" fill="none" stroke="#2E6BE6" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="1080" y="172" width="88" height="96" rx="14" fill="#111214"/>
+  <text class="mono" x="1124" y="212" text-anchor="middle" font-size="24" font-weight="700" fill="#FFFFFF">CI</text>
+  <text class="mono" x="1124" y="244" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">0 / 1</text>
+</svg>

@@ -1,0 +1,8 @@
+[
+  {
+    "id": "session:random-id",
+    "path": "src/session.js",
+    "legacyCallee": "identity.randomSessionId",
+    "replacementCallee": "identity.stableAccountId"
+  }
+]

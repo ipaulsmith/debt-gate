@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="title desc">
+  <title id="title">debt-gate requires proof before old debt can disappear</title>
+  <desc id="desc">A known finding disappears from the current scan. Debt-gate blocks the change until the separate repair check confirms the fix.</desc>
+  <defs>
+    <style>
+      .sans{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI","Helvetica Neue",Helvetica,Arial,sans-serif}
+      .mono{font-family:"SF Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono","Liberation Mono",monospace}
+    </style>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="145%">
+      <feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#000" flood-opacity="0.09"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.04"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="480" fill="#F1F1EF"/>
+  <text class="sans" x="52" y="224" font-size="82" font-weight="800" letter-spacing="-3" fill="#2E6BE6">debt-gate</text>
+  <text class="sans" x="62" y="300" font-size="52" font-weight="800" letter-spacing="-2" fill="#111214">prove the fix</text>
+  <g filter="url(#shadow)"><rect x="500" y="62" width="652" height="356" rx="18" fill="#FFFFFF"/></g>
+  <text class="sans" x="536" y="104" font-size="18" font-weight="700" letter-spacing="1.5" fill="#62666C">BASELINE</text>
+  <rect x="536" y="120" width="580" height="68" rx="12" fill="#E1EAFB"/>
+  <rect x="554" y="134" width="40" height="40" rx="10" fill="#2E6BE6"/>
+  <text class="mono" x="574" y="162" text-anchor="middle" font-size="22" font-weight="700" fill="#FFFFFF">D</text>
+  <text class="mono" x="612" y="162" font-size="22" font-weight="700" fill="#111214">session:random-id</text>
+  <text class="sans" x="1094" y="162" text-anchor="end" font-size="20" font-weight="700" fill="#2E6BE6">known</text>
+  <text class="sans" x="536" y="224" font-size="18" font-weight="700" letter-spacing="1.5" fill="#62666C">CURRENT SCAN</text>
+  <rect x="536" y="240" width="580" height="68" rx="12" fill="#FFFFFF" stroke="#A9ADB3" stroke-width="2" stroke-dasharray="8 8"/>
+  <circle cx="574" cy="274" r="19" fill="#F1F1EF"/>
+  <path d="M565 274h18" stroke="#62666C" stroke-width="3" stroke-linecap="round"/>
+  <text class="sans" x="612" y="281" font-size="24" font-weight="650" fill="#111214">finding disappeared</text>
+  <text class="sans" x="1094" y="281" text-anchor="end" font-size="20" font-weight="700" fill="#62666C">not proof</text>
+  <rect x="536" y="336" width="580" height="54" rx="11" fill="#111214"/>
+  <text class="mono" x="826" y="370" text-anchor="middle" font-size="22" font-weight="700" fill="#FFFFFF">BLOCKED — repair check must confirm D</text>
+</svg>

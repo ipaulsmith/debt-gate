@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Eighteen expected verdicts across JavaScript, Go, and Ruby repositories</title>
+  <desc id="desc">Debt-gate passed all six scenarios on a JavaScript debugger, a Go archive library, and a Ruby process manager.</desc>
+  <defs>
+    <style>
+      .sans{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI","Helvetica Neue",Helvetica,Arial,sans-serif}
+      .mono{font-family:"SF Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono","Liberation Mono",monospace}
+    </style>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="145%">
+      <feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#000" flood-opacity="0.09"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.04"/>
+    </filter>
+    <g id="check"><circle cx="0" cy="0" r="13" fill="#2E6BE6"/><path d="M-6 0l4 4 8-9" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+  </defs>
+  <rect width="1200" height="520" fill="#F1F1EF"/>
+  <text class="mono" x="52" y="244" font-size="134" font-weight="800" letter-spacing="-8" fill="#2E6BE6">18/18</text>
+  <text class="sans" x="62" y="316" font-size="40" font-weight="800" letter-spacing="-1.5" fill="#111214">expected verdicts</text>
+  <text class="sans" x="62" y="356" font-size="22" font-weight="650" fill="#62666C">six scenarios · three languages</text>
+  <g filter="url(#shadow)"><rect x="430" y="54" width="722" height="412" rx="18" fill="#FFFFFF"/></g>
+  <g class="sans" font-size="15" font-weight="750" letter-spacing="1.1" fill="#62666C"><text x="464" y="92">PROJECT</text><text x="700" y="92">LANGUAGE</text><text x="820" y="92">RULE</text><text x="1118" y="92" text-anchor="end">6 CASES</text></g>
+  <line x1="464" y1="110" x2="1118" y2="110" stroke="#E2E3E5" stroke-width="2"/>
+  <text class="sans" x="464" y="153" font-size="17" font-weight="750" fill="#2E6BE6">DEBUGGER</text>
+  <text class="mono" x="464" y="181" font-size="21" font-weight="700" fill="#111214">node-inspector</text>
+  <rect x="694" y="143" width="96" height="34" rx="8" fill="#E1EAFB"/><text class="mono" x="742" y="166" text-anchor="middle" font-size="16" font-weight="700" fill="#2E6BE6">JavaScript</text>
+  <text class="mono" x="814" y="166" font-size="16" font-weight="650" fill="#111214">util.isArray</text>
+  <g transform="translate(982 163)"><use href="#check"/><use href="#check" x="29"/><use href="#check" x="58"/><use href="#check" x="87"/><use href="#check" x="116"/><use href="#check" x="145"/></g>
+  <line x1="464" y1="222" x2="1118" y2="222" stroke="#E2E3E5" stroke-width="2"/>
+  <text class="sans" x="464" y="265" font-size="17" font-weight="750" fill="#2E6BE6">ARCHIVE LIBRARY</text>
+  <text class="mono" x="464" y="293" font-size="21" font-weight="700" fill="#111214">extract</text>
+  <rect x="694" y="255" width="96" height="34" rx="8" fill="#E1EAFB"/><text class="mono" x="742" y="278" text-anchor="middle" font-size="16" font-weight="700" fill="#2E6BE6">Go</text>
+  <text class="mono" x="814" y="278" font-size="16" font-weight="650" fill="#111214">ioutil.ReadAll</text>
+  <g transform="translate(982 275)"><use href="#check"/><use href="#check" x="29"/><use href="#check" x="58"/><use href="#check" x="87"/><use href="#check" x="116"/><use href="#check" x="145"/></g>
+  <line x1="464" y1="334" x2="1118" y2="334" stroke="#E2E3E5" stroke-width="2"/>
+  <text class="sans" x="464" y="377" font-size="17" font-weight="750" fill="#2E6BE6">PROCESS MANAGER</text>
+  <text class="mono" x="464" y="405" font-size="21" font-weight="700" fill="#111214">Foreman</text>
+  <rect x="694" y="367" width="96" height="34" rx="8" fill="#E1EAFB"/><text class="mono" x="742" y="390" text-anchor="middle" font-size="16" font-weight="700" fill="#2E6BE6">Ruby</text>
+  <text class="mono" x="814" y="390" font-size="16" font-weight="650" fill="#111214">File.exists?</text>
+  <g transform="translate(982 387)"><use href="#check"/><use href="#check" x="29"/><use href="#check" x="58"/><use href="#check" x="87"/><use href="#check" x="116"/><use href="#check" x="145"/></g>
+</svg>

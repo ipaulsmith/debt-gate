@@ -1,0 +1,45 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    name: ${{ matrix.os }} / Node ${{ matrix.node }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+          - macos-latest
+        node:
+          - 20
+          - 22
+          - 24
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v7
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+      - name: Record environment
+        run: |
+          uname -a
+          node --version
+          npm --version
+          git --version
+      - name: Install package metadata
+        run: npm ci
+      - name: Run adversarial and packed-artifact tests
+        run: npm test
+      - name: Inspect publish contents
+        run: npm run pack:check

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="title desc">
+  <title id="title">The count stays at four while one old finding is replaced by new debt</title>
+  <desc id="desc">A, B, C, D become A, B, C, E. A count-only limit passes because both totals are four. Debt-gate blocks the new finding E.</desc>
+  <defs>
+    <style>
+      .sans{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI","Helvetica Neue",Helvetica,Arial,sans-serif}
+      .mono{font-family:"SF Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono","Liberation Mono",monospace}
+    </style>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="145%">
+      <feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#000" flood-opacity="0.09"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.04"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="480" fill="#F1F1EF"/>
+  <text class="mono" x="52" y="240" font-size="126" font-weight="800" letter-spacing="-8" fill="#2E6BE6">4 = 4</text>
+  <text class="sans" x="62" y="312" font-size="48" font-weight="800" letter-spacing="-2" fill="#111214">but D became E</text>
+  <g filter="url(#shadow)"><rect x="500" y="62" width="652" height="356" rx="18" fill="#FFFFFF"/></g>
+  <g class="sans" font-size="18" font-weight="700" letter-spacing="1.5" fill="#62666C"><text x="536" y="106">BEFORE</text><text x="536" y="226">AFTER</text></g>
+  <g fill="#E1EAFB">
+    <rect x="536" y="122" width="78" height="64" rx="12"/><rect x="628" y="122" width="78" height="64" rx="12"/><rect x="720" y="122" width="78" height="64" rx="12"/><rect x="812" y="122" width="78" height="64" rx="12"/>
+    <rect x="536" y="242" width="78" height="64" rx="12"/><rect x="628" y="242" width="78" height="64" rx="12"/><rect x="720" y="242" width="78" height="64" rx="12"/>
+  </g>
+  <rect x="812" y="242" width="78" height="64" rx="12" fill="#2E6BE6"/>
+  <g class="mono" font-size="30" font-weight="700" text-anchor="middle" fill="#2E6BE6">
+    <text x="575" y="164">A</text><text x="667" y="164">B</text><text x="759" y="164">C</text><text x="851" y="164">D</text>
+    <text x="575" y="284">A</text><text x="667" y="284">B</text><text x="759" y="284">C</text><text x="851" y="284" fill="#FFFFFF">E</text>
+  </g>
+  <g class="mono" font-size="26" font-weight="700"><text x="930" y="162" fill="#62666C">count: PASS</text><text x="930" y="282" fill="#2E6BE6">new ID: E</text></g>
+  <rect x="536" y="338" width="580" height="52" rx="11" fill="#111214"/>
+  <text class="mono" x="826" y="371" text-anchor="middle" font-size="22" font-weight="700" fill="#FFFFFF">debt-gate: BLOCKED — E was never allowed</text>
+</svg>
